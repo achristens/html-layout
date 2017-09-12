@@ -17,72 +17,108 @@
       </ul>
     </nav>
     <main>
+    <section>
       <article>
         <img src="https://www.placebear.com/200/300" alt="article-image">
+        <p>NEW! SEP 12, 2017</p>
         <h1>Patterns and Purpose, an Excerpt from Animation at Work</h1>
-        <p>by <a href="#">Rachel Nabors</a> September 12, 2017</p>
-        <span>Published in <a href="#">Interaction Design</a></span>
-        <blockquote cite="http://">
-          <img src="https://www.placebear.com/200/300" width="100px" height="100px" alt="article-image">A note from the editors: We’re pleased to share an excerpt from Chapter 2 of Rachel Nabors's new book, Animation at Work, available now from A Book Apart.
-        </blockquote>
-        <p>So we can use animations to tap into users’ visual systems and give them a cognitive speed boost, terrific! But before animating every element of our designs, we must learn when and how to use this new tool: with great power comes great responsibility, and so forth. And as animation must vie with many other concerns for development and design time, it makes sense to spend our resources where they’ll go the farthest.</p>
-        <div>
-          <div>
-            <img src="https://www.placebear.com/200/300" width="80px" height="80px" alt="sidebar-image">
-            <a href="#">A Book Apart:<br>Brief books for people who make websites.</a>
-          </div>
-          <div>
-            <img src="https://www.placebear.com/200/300" width="80px" height="80px" alt="sidebar-image">
-            <a href="#">An Event Apart:<br>3 days of design, code, and content for web & UX designers & devs.</a>
-          </div>
-        </div>
-        <p>This chapter sets you up with some core animation patterns and shows you how animation applies to a greater system. Then you’ll learn how to spot cognitive bottlenecks and low-hanging fruit, maximizing the impact of the animations you do invest in.</p>
-        <h2>Common Animation Patterns</h2>
-        <p>If you’ve looked at as many examples of animation on the web and in app interfaces as I have, certain patterns start to emerge. These patterns are helpful for identifying and succinctly verbalizing the purpose of an animation to others. Here are the categories I’ve found myself using the most:
-
-        Transitions take users from place to place in the information space, or transition them out of one task into another. These tend to have massive impacts on the content on the page, replacing large portions of information.
-
-        Supplements bring information on or off the page, but don’t change the user’s “location” or task. They generally add or update bits of additional content on the page.
-
-        Feedback indicates causation between two or more events, often used to connect a user’s interaction with the interface’s reaction.
-
-        Demonstrations explain how something works or expose its details by showing instead of telling.
-
-        Decorations do not convey new information and are purely aesthetic.
-
-        Let’s have a look at each of them and see how they impact the user’s experience.
+        <p>by <a href="#">Rachel Nabors</a></p>
+        <p>Animations into our users’ visual systems and give them a cognitive speed boost. But which elements of our design benefit most from this new tool? In this excerpt from Rachel Nabors’s new book, Animation at Work, you’ll discover some core animation patterns, and learn how animation applies to a greater design system.
         </p>
-        <h3>Transitions</h3>
-        <p>The web was originally designed as a series of linked documents. Clicking on a link caused the browser to wipe the screen, often causing a telltale flash of white, before painting the next page from scratch. While this made sense in the context of linked text-based documents, it makes less sense in an era where pages share many rich design elements and belong to the same domain. Not only is it wasteful of the browser’s resources to be recreating the same page layout over and over, but it also increases users’ cognitive load when they have to reorient and reevaluate the page’s content.
-
-        Animation, specifically motion, can facilitate the user’s orientation in an information space by offloading that effort to the brain’s visual cortex. Using a transition between changes in task flow or locations in information architecture ideally reinforces where the user has been, where they are going, and where they are now in one fell swoop.
-
-        For example, on Nike’s SB Dunk page, when a user clicks a navigation arrow, the current sneaker moves out of the way while the next sneaker moves in from the opposite direction (Fig 2.1). These transitions clearly show the user how they are navigating along a linear continuum of sneakers, helping them keep track of their place and reinforcing the spatial model of perusing a real-world row of sneakers.
-        </p>
-        <img src="https://www.placebear.com/200/300" width="600x" height="300px" alt="embedded-article-image">
-        <p>Fig 2.1: On this Nike page, transitions are used to navigate forwards and backwards along a linear continuum of sneakers. (Watch the accompanying video.)</p>
-        <p>On another shoes site, fluevog.com, transitions move the user from task to task (Fig 2.2). After a user starts typing in the search field, the results are animated on top of a darker backdrop. This transitions the user from the browsing context to refining their search results, streamlining their focus while also reassuring them that they can get back to browsing without much effort.</p>
-        <img src="https://www.placebear.com/200/300" width="600x" height="300px" alt="embedded-article-image">
-        <p>Fig 2.2: On Fluevog’s website, transitions move users from the browsing context to the searching context. (Watch the accompanying video.)</p>
-        <h3>Supplements</h3>
-        <p>While transitions move the user from state to state, supplemental animations bring ancillary information to the user. Think of times when information complementary to the main content of the page appears or disappears in view: alerts, dropdowns, and tooltips are all good candidates for a supplemental animation on entry and exit.
-
-        Remember that these animations need to respect the user’s Cone of Vision: will they be looking directly at a tooltip appearing next to their cursor, or will their attention need to be directed to an alert on the side of their tablet?
-
-        When a user adds a product to their shopping cart on glossier.com, rather than taking them to a whole new shopping cart page, the site merely updates the user as to their cart’s contents by popping it out as a sidebar (Fig 2.3c). While a transition would snap the user out of browsing mode, this supplemental animation lets the user dismiss the shopping cart and continue shopping.
-
-        The shopping cart sidebar uses an additional supplemental animation to quickly and subtly attract the user’s eye: a progress meter gradually fills to show how much the user needs to spend to get free shipping (Fig 2.3d).
-        </p>
-        <img src="https://www.placebear.com/200/300" width="500x" height="500px" alt="embedded-article-image">
-        <p>Fig 2.3: Glossier.com uses supplemental animation to show and hide the user’s shopping cart, keeping them in the shopping context longer without forcing them into the purchasing context. (Watch the accompanying video.)</p>
-        <p>This shopping cart process has a third animation pattern going on: the Add to Bag button gains a spinning icon when clicked, which gives the user feedback as to its loading state (Fig 2.3b). Speaking of feedback…</p>
-        <h3>Feedback</h3>
-        <p>Animation can give users direct feedback about their interactions. A depressed button, a swiping gesture—both link a human action to an interface’s reaction. Or the flip side: a loading spinner on a page indicates that we’re waiting on the computer. Without visual feedback, people are left wondering if they actually clicked that “pay now” button, or if the page is really loading after all.
-
-        On the Monterey Bay Aquarium’s site, hovering over a button causes its color to fade from red to blue, indicating that the element is interactive and ready to react to user input (Fig 2.4). Button hovers are classic examples for this kind of animation, partly because the gain of giving users visual feedback on buttons is so measurable and important to business.</p>
-        <img src="https://www.placebear.com/200/300" width="600x" height="300px" alt="embedded-article-image">
-        <p>Fig 2.4: On the Monterey Bay Aquarium’s site, hovering on a button triggers an animation that gives the user feedback that the element is interactive. (Watch the accompanying video.)</p>
       </article>
+    </section>
+    <section>
+      <h2>More from A List Apart</h2>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <article class="">
+        <h3>Title</h3>
+        <p><a href="#">Author</a></p>
+        <p>Excerpt blah blah blah blah blah</p>
+        <span>Category, Date</span>
+      </article>
+      <aside class="">
+        <div>
+          <a href="">
+            <img src="https://www.placebear.com/200/300" width="80px" alt="article-image">
+            <p>A Book Apart:<br>Brief books for people who make websites</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="https://www.placebear.com/200/300" width="80px" alt="article-image">
+            <p>An Event Apart:<br>3 days of design, code, and content for web & UX designers & devs.</p>
+          </a>
+        </div>
+      </aside>
+    </section>
+    <blockquote cite="http://">
+      A List Apart explores the design, development, and meaning of web content, with a special focus on web standards and best practices. Explore our articles or find out more about us.
+    </blockquote>
     </main>
   </body>
 </html>
